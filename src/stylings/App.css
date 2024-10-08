@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --black: #242425;
+    --dark-grey: #333533;
+    --text-white: #e8eddf;
+    --background-white: #cfdbd5;
+    --gold: #f5cb5c;
+    --hover-text: #FFFFFF;
+    --hover-black: #000000;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    color: var(--text-white);
+}
