@@ -47,7 +47,7 @@ export const Main = () => {
                     <Image src={WatermelonNegroni} alt={"Watermelon Negroni"} text={"Watermelon Negroni"}
                            description={{options: ["Clavis Watermelon Negroni", "London Dry Gin"]}}/>
                     <Image src={SabiDiablo} alt={"Sabi Diablo"} text={"Sabi Diablo"}
-                           description={{options: ["Pomegranate juice", "Lychee liqueur", "Tequila", "Ginger beer", "Lime"]}}/>
+                           description={{options: ["Pomegranate juice", "Lychee liqueur", "Tequila", "Cranberry juice"]}}/>
 
                 </div>
             </div>

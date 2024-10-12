@@ -64,13 +64,13 @@ button:active {
     }
 
     .header__logo img{
-        width: 200px;
+        width: 400px;
         padding: 20px;
         transition: width 0.5s ease-in-out;
     }
 
     .header__logo img.scroll{
-        width: 100px;
+        width: 200px;
     }
 
 }

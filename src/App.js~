@@ -2,16 +2,12 @@ import {Header} from './props/Header';
 import {Main} from "./props/Main";
 
 import './stylings/App.css';
-import mainImage from "./pics/main.webp";
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <div className="video" id="start">
-                <img src={mainImage} alt="main"/>
-            </div>
-            <Main/>
+            <Header />
+            <Main />
         </div>
     );
 }

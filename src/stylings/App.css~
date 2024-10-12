@@ -23,6 +23,7 @@ header{
     left: 0;
     right: 0;
     z-index: 1;
+    background: linear-gradient(to bottom, var(--black) 50%, transparent 100%);
 }
 .video{
     position: relative;
