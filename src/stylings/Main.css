@@ -246,7 +246,8 @@ span.italic {
 .history .third-block p {
     display: flex;
     text-align: center;
-    text-wrap: pretty;
+    --webkit-text-wrap: pretty;
+    --moz-text-wrap: stable;
     padding: 80px;
     justify-content: center;
     align-items: center;

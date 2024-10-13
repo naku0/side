@@ -119,7 +119,7 @@ span.italic {
 .cocktail__card p {
     display: flex;
     justify-content: center;
-    text-align: end;
+    text-align: center;
     padding: 25px;
     font-size: 2em;
 }
