@@ -24,10 +24,10 @@
 }
 
 .image h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     padding-bottom: 20px;
-    font-style: italic;
     display: flex;
+    font-weight: bold;
 }
 
 .image .image__description {
@@ -55,9 +55,12 @@
         word-break: break-word;
         justify-content: center;
         text-align: center;
+        font-size: 1.5em;
         padding: 5px;
     }
 }
+
+
 
 .image:hover .image__description {
     cursor: pointer;
@@ -75,17 +78,17 @@
 @media (max-width: 768px) {
     .image{
         width: 300px;
-        height: 300px;
+        height: 500px;
     }
     .image img {
         width: 300px;
-        height: 300px;
+        height: 500px;
     }
     .image h2{
         font-size: 1em;
     }
-    .image li{
-        font-size: 0.7em;
+    .image ul li{
+        font-size: 1em;
     }
 }
 

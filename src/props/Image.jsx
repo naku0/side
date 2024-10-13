@@ -2,8 +2,8 @@ import "../stylings/Image.css";
 const returnOptions = (description) => {
     return (
         <ul className="image__ul">
-            {description.description.options.map((option) => (
-                <li>{option}</li>
+            {description.description.options.map((option, index) => (
+                <li key={index}>{option}</li>
             ))}
         </ul>
     );

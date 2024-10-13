@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 :root {
-    --black: #242425;
-    --dark-grey: #333533;
-    --text-white: #e8eddf;
-    --background-white: #cfdbd5;
-    --gold: #f5cb5c;
-    --hover-text: #FFFFFF;
-    --hover-black: #000000;
+    --black: #212529;
+    --dark-grey: #343a40;
+    --light-grey: #495057;
+    --text-white: #f8f9fa;
+    --background-white: #e9ecef;
+    --white2: #d7d7d7;
+    --hover-text: #adb5bd;
+    --hover-black: #6c757d;
+    --snowy-white: #f8f9fa;
 }
 
 .App {
     display: flex;
     flex-direction: column;
-    background-color: var(--black);
-    color: var(--text-white);
+    background-color: var(--background-white);
+    color: var(--black);
 }
 
 header{
@@ -22,16 +23,48 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     z-index: 1;
 }
 .video{
     position: relative;
     z-index: 0;
     top: 0;
+    width: 100%;
 }
 
 .video img{
     position: relative;
     width: 100%;
+    height: 100svh;
     object-fit: cover;
 }
+
+.video::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, transparent 60%);
+}
+.video h1{
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-white);
+    z-index: 1;
+}
+
+@media screen and (max-width: 850px) {
+    .video h1{
+        font-size: 3em;
+    }
+}
+
