@@ -14,5 +14,5 @@ html{
 
 body {
   height: 100svh;
-  background: var(--black);
+  background: var(--background-white);
 }
