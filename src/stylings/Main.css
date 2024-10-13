@@ -177,16 +177,8 @@ span.italic {
     text-align: center;
     border: 1px var(--light-grey) solid;
     border-radius: 40px;
-}
+    box-shadow: rgba(0,0,0,0.3) 5px 5px 10px;
 
-.reasons p.number {
-    display: flex;
-    align-items: center;
-    color: var(--light-grey);
-    font-family: sans-serif;
-    font-style: italic;
-    font-size: 5em;
-    margin: 0 20px;
 }
 
 .reasons p.reason_text {
@@ -195,16 +187,6 @@ span.italic {
     align-content: center;
     place-items: center;
     justify-content: center;
-}
-
-.services .interlude {
-    font-size: 1.5em;
-}
-
-.reasons > div:hover {
-    background-color: var(--background-white);
-    color: var(--dark-grey);
-    cursor: pointer;
 }
 
 .history {
