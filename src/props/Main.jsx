@@ -102,7 +102,7 @@ export const Main = () => {
                         <p>В ваших бокалах мы собрали актуальные современные тренды, незабываемую редкую классику и
                             молекулярную кухню в виде украшений напитков. Мы предоставляем безупречный гостеприимный
                             сервис,
-                            авторскую коктейльную карут, а так же подбор всех напитков под Ваши запросы.</p>
+                            авторскую коктейльную карту, а так же подбор всех напитков под Ваши запросы.</p>
                     </div>
                     <img src={ShioriNight2} alt="Shiori Night"/>
                 </div>
@@ -121,7 +121,7 @@ export const Main = () => {
                     {cocktails.length > 3 && (
                         <div className="cocktail__card">
                             <p>Некоторые напитки Вы можете найти и попробовать
-                                в ресторане <span className="italic">OVO (Michelin gid)</span> и <span
+                                в ресторане <span className="italic">OVO (Michelin guide)</span> и <span
                                     className="italic">Lobby
                                 Lounge Bar</span> при отеле <span className="italic">Lotte Hotel Moscow</span>.</p>
                             {showMenu ? (

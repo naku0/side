@@ -67,8 +67,8 @@ main {
     --moz-text-wrap: stable;
     text-align: center;
     will-change: opacity, transform;
-    border-bottom: 3px solid var(--text-white);
-    border-top: 3px solid var(--text-white);
+    border-bottom: 3px solid var(--black);
+    border-top: 3px solid var(--black);
 }
 
 span.italic {

@@ -120,7 +120,7 @@ export const Main = () => {
                     ))}
                     {cocktails.length > 3 && (
                         <div className="cocktail__card">
-                            <p>Некоторые напитки вы можете найти и попробовать
+                            <p>Некоторые напитки Вы можете найти и попробовать
                                 в ресторане <span className="italic">OVO (Michelin gid)</span> и <span
                                     className="italic">Lobby
                                 Lounge Bar</span> при отеле <span className="italic">Lotte Hotel Moscow</span>.</p>
@@ -161,7 +161,7 @@ export const Main = () => {
                 </div>
                 <div className="about">
                     <p>
-                        SIDE — бар, который <span className="italic">не имеет единого местонахождения</span>. Как вы
+                        SIDE — бар, который <span className="italic">не имеет единого местонахождения</span>. Как Вы
                         приходите в своё любимое заведение
                         после для того чтобы отпраздновать знаменательный день, так и любимое место теперь <span
                         className="italic">может посетить

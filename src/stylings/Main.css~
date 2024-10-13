@@ -67,7 +67,7 @@ main {
     --moz-text-wrap: stable;
     text-align: center;
     will-change: opacity, transform;
-    border-bottom: 3px solid var(--text-white);
+    border-bottom: 3px solid var(--black);
     border-top: 3px solid var(--text-white);
 }
 
@@ -246,7 +246,8 @@ span.italic {
 .history .third-block p {
     display: flex;
     text-align: center;
-    text-wrap: pretty;
+    --webkit-text-wrap: pretty;
+    --moz-text-wrap: stable;
     padding: 80px;
     justify-content: center;
     align-items: center;
