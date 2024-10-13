@@ -45,8 +45,9 @@ main {
 }
 
 .about-us img {
-    width: 600px;
+    width: 500px;
     object-fit: cover;
+    object-position: left center;
 }
 
 .about {
@@ -68,7 +69,7 @@ main {
     text-align: center;
     will-change: opacity, transform;
     border-bottom: 3px solid var(--black);
-    border-top: 3px solid var(--text-white);
+    border-top: 3px solid var(--black);
 }
 
 span.italic {
@@ -257,7 +258,7 @@ span.italic {
 .history .third-block img {
     width: 600px;
     object-fit: cover;
-    object-position: center bottom;
+    object-position: 0 0%;
 }
 
 .contact {

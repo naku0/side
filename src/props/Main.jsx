@@ -12,8 +12,8 @@ import UmeMartini from "../pics/UmeMartini.webp";
 import SabiDiablo from "../pics/SabiDiablo.webp";
 import WatermelonNegroni from "../pics/WatermelonNegroni.webp";
 import WatermelonNegroni2 from "../pics/WatermelonNegroni2.webp"
-import ShisoSpritz2 from "../pics/ShisoSpritz2.webp"
-import ShioriNight2 from "../pics/ShioriNightHEIC.webp"
+import onas from "../pics/photo_onas.webp"
+import barmen from "../pics/photo_cont.webp"
 import {useState} from "react";
 
 export const Main = () => {
@@ -104,7 +104,7 @@ export const Main = () => {
                             сервис,
                             авторскую коктейльную карту, а так же подбор всех напитков под Ваши запросы.</p>
                     </div>
-                    <img src={ShioriNight2} alt="Shiori Night"/>
+                    <img src={onas} alt="Spicy Mango"/>
                 </div>
                 <div className="first-block">
                     <p>Выездной бар с эксклюзивной авторской коктейльной картой.</p>
@@ -171,7 +171,7 @@ export const Main = () => {
                     </p>
                 </div>
                 <div className="third-block">
-                    <img src={ShisoSpritz2} alt="Shiso Spritz"/>
+                    <img src={barmen} alt="Rakhim Mayers"/>
                     <p>
                         «Меня зовут Рахим Майерс, идея для создания выездного бара пришла нам, когда мы сидели после
                         работы с моими друзьями Викторией Косенковой и Матвеем Шуберт. Меня часто звали работать на
