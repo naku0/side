@@ -14,11 +14,10 @@ function App() {
     const dealWithKids = () => {
         set18(false);
         formRef.current.textContent = "Извините, возвращайтесь, как только Вам исполнится 18 лет."
-        formRef.forEach((el) => {
-            if(el.type == button){
-                el.remove();
-            }
-        })
+        const buttons = formRef.current.querySelectorAll('button');
+        buttons.forEach((button) => {
+            button.remove();
+        });
     }
 
     return (

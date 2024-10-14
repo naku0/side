@@ -11,15 +11,6 @@ function App() {
     const width = window.innerWidth;
     const formRef = useRef();
 
-    const dealWithKids = () => {
-        set18(false);
-        formRef.current.textContent = "Извините, возвращайтесь, как только Вам исполнится 18 лет."
-        const buttons = formRef.current.querySelectorAll('button');
-        buttons.forEach((button) => {
-            button.remove();
-        });
-    }
-
     return (
         <div className="App">
             {!is18 && (<div className="ageRestrict">
@@ -28,7 +19,6 @@ function App() {
                         </p>
                         <p> Вам больше 18 лет?</p>
                         <button onClick={() => set18(true)}>Да, я подтверждаю, что мне больше 18 лет</button>
-                        <button onClick={dealWithKids}>Нет, мне нет 18 лет</button>
                 </div>
             </div>)}
             <Header/>
