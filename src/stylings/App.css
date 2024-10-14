@@ -104,5 +104,9 @@ header{
     .video h1{
         font-size: 2em;
     }
+    .form{
+        margin: 0 20px;
+        padding: 30px;
+    }
 }
 
