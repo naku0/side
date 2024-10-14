@@ -13,7 +13,7 @@ import SabiDiablo from "../pics/SabiDiablo.webp";
 import WatermelonNegroni from "../pics/WatermelonNegroni.webp";
 import WatermelonNegroni2 from "../pics/WatermelonNegroni2.webp"
 import onas from "../pics/photo_onas.webp"
-import barmen from "../pics/photo_cont.webp"
+import barmen from "../pics/IMG_8108-round.webp"
 import {useState} from "react";
 
 export const Main = () => {
@@ -41,49 +41,49 @@ export const Main = () => {
             src: Shibu,
             alt: "Shibu",
             text: "Shibu",
-            description: {options: ["Cordial", "Kalamansi", "Limoncello", "Prosecco"]}
+            description: {options: ["Kiwi", "Matcha", "Yuzu", "Prosecco"]}
         },
         {
             src: LadyInRed,
             alt: "Lady in Red",
             text: "Lady in Red",
-            description: {options: ["Vodka", "Mint", "Blackberry", "Creamy blue cheese foam"]}
+            description: {options: ["Gin", "Calvados", "Dragonfruit cordial"]}
         },
         {
             src: LycheeGimlet,
             alt: "Lychee Gimlet",
             text: "Lychee Gimlet",
-            description: {options: ["Cordial", "Kalamansi", "Limoncello", "Prosecco"]}
+            description: {options: ["Gin", "Lychee", "Lime", "Sugar"]}
         },
         {
             src: WatermelonNegroni,
             alt: "Watermelon Negroni",
             text: "Watermelon Negroni",
-            description: {options: ["Vodka", "Mint", "Blackberry", "Creamy blue cheese foam"]}
+            description: {options: ["Clavis Watermelon Negroni", "London Dry Gin"]}
         },
         {
             src: SabiDiablo,
             alt: "Sabi Diablo",
             text: "Sabi Diablo",
-            description: {options: ["Cordial", "Kalamansi", "Limoncello", "Prosecco"]}
+            description: {options: ["Pomegranate juice", "Lychee liqueur", "Tequila", "Ginger beer", "Lime"]}
         },
         {
             src: CornHighboll,
             alt: "Corn Highboll",
             text: "Corn Highboll",
-            description: {options: ["Cordial", "Kalamansi", "Limoncello", "Prosecco"]}
+            description: {options: ["Whiskey", "Popcorn syrup", "Soda"]}
         },
         {
             src: PassionSour,
             alt: "Passion Sour",
             text: "Passion Sour",
-            description: {options: ["Cordial", "Kalamansi", "Limoncello", "Prosecco"]}
+            description: {options: ["Whiskey", "Passion fruit", "Red pepper", "Sugar", "Lemon"]}
         },
         {
             src: SpicyMango,
             alt: "Spicy Mango",
             text: "Spicy Mango",
-            description: {options: ["Cordial", "Kalamansi", "Limoncello", "Prosecco"]}
+            description: {options: ["Rum", "Mango", "Cinnamon", "Coconut cream"]}
         },
     ];
 

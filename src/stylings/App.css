@@ -78,7 +78,7 @@ header{
     width: 600px;
     background-color: var(--white2);
     padding: 40px;
-    border-radius: 30px;
+    border-radius: 5px;
     text-align: center;
     font-size: 1em;
 }
@@ -88,17 +88,20 @@ header{
 }
 
 .form button{
-    background-color: var(--background-white);
+    background-color: rgb(131, 0, 0);
+    color: var(--text-white);
     border: 1px solid var(--black);
     border-radius: 10px;
     padding: 10px 20px;
     margin: 5px;
     font-size: 1em;
+    text-shadow: none;
 }
 
 .form button:hover{
-    background-color: var(--light-grey);
+    background-color: rgb(178, 73, 73);
 }
+
 
 @media screen and (max-width: 850px) {
     .video h1{
@@ -107,6 +110,10 @@ header{
     .form{
         margin: 0 20px;
         padding: 30px;
+        font-size: 0.9em;
+    }
+    .form button{
+        font-size: 0.8em;
     }
 }
 

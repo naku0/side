@@ -177,7 +177,7 @@ span.italic {
     text-align: center;
     border: 1px var(--light-grey) solid;
     border-radius: 40px;
-    box-shadow: rgb(0,0,0,0.3) 5px 5px 10px;
+    box-shadow: rgba(0,0,0,0.3) 5px 5px 10px;
 }
 
 .reasons p.reason_text {
@@ -222,7 +222,6 @@ span.italic {
 
 .history .third-block {
     display: flex;
-    height: 900px;
 }
 
 .history .third-block p {
@@ -238,7 +237,9 @@ span.italic {
 
 .history .third-block img {
     width: 600px;
+    height: 100%;
     object-fit: cover;
+    padding: 20px;
 }
 
 .contact {

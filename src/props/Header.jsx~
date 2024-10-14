@@ -16,12 +16,15 @@ export const Header = () => {
 
 
     const goTo = (id, position) => {
+
         return () => {
             const element = document.querySelector(`#${id}`);
             element.scrollIntoView({
                 behavior: "smooth",
                 block: position,
             });
+            const y = element.getBoundingClientRect().top - 90;
+            if(position === "start") {window.scrollTo({ top: y, behavior: "smooth" });}
             setMenu(false);
         };
     }
@@ -60,7 +63,7 @@ export const Header = () => {
                 </li>
             </ul>
             {menu && (
-                <nav className="navMenu">
+                <nav className="navMenu" onClick={showMenu}>
                     <ul className="navigation">
                         <img src={logo2} alt="logo_eventside-black" onClick={showMenu}/>
                         <li onClick={goTo("about-us", "start")}>О нас</li>
