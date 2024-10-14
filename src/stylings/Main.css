@@ -363,8 +363,19 @@ span.italic {
         padding: 20px;
     }
 
-    .history img {
+    .history .first-block img {
         display: none;
+    }
+
+    .history .third-block {
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .history .third-block img {
+        width: 300px;
+        height: 100%;
+        padding: 40px 0 0 0;
     }
 
     .cocktail__card p {
@@ -372,7 +383,7 @@ span.italic {
     }
 
     .cocktail__card button {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     .contact .contacts {

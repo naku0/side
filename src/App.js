@@ -17,7 +17,7 @@ function App() {
                 <div className="form" ref={formRef}>
                     <p>Сайт содержит информацию для лиц совершеннолетнего возраста.
                         </p>
-                        <button onClick={() => set18(true)}>Да, я подтверждаю, что мне больше 18 лет</button>
+                        <button onClick={() => set18(true)}>«Да, мне исполнилось 18 лет.</button>
                 </div>
             </div>)}
             <Header/>

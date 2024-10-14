@@ -59,7 +59,7 @@ export const Main = () => {
             src: WatermelonNegroni,
             alt: "Watermelon Negroni",
             text: "Watermelon Negroni",
-            description: {options: ["Clavis Watermelon Negroni", "Creamy blue cheese foam"]}
+            description: {options: ["Clavis Watermelon Negroni", "London Dry Gin"]}
         },
         {
             src: SabiDiablo,
