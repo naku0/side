@@ -77,7 +77,7 @@ span.important {
 }
 
 span.italic {
-    font-style: italic;
+    font-style: oblique 10deg;
 }
 
 .menu {
