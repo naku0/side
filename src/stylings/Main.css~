@@ -135,8 +135,8 @@ span.italic {
     margin-top: 20px;
     cursor: pointer;
     text-decoration: underline;
-    -webkit-text-decoration-color: black;
-    text-decoration-color: black;
+    -webkit-text-decoration-color: var(--black);
+    text-decoration-color: var(--black);
     border: none;
 
 }
