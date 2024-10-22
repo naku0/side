@@ -14,10 +14,14 @@ import WatermelonNegroni from "../pics/WatermelonNegroni.webp";
 import WatermelonNegroni2 from "../pics/WatermelonNegroni2.webp"
 import onas from "../pics/photo_onas.webp"
 import barmen from "../pics/IMG_8108-round.webp"
-import {useState} from "react";
+import barmen2 from "../pics/1729611246141.webp"
+import {useEffect, useState} from "react";
+import {goTo} from "./goTo";
 
 export const Main = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const [showCard, setShowCard] = useState(false);
+    const [isMobile, setMobile] = useState(window.innerWidth < 850);
     const cocktails = [
         {
             src: UmeMartini,
@@ -87,6 +91,16 @@ export const Main = () => {
         },
     ];
 
+    useEffect(() => {
+        const handleResize = () => {
+            setMobile(window.innerWidth <= 850);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <main>
             <div className="about-us" id="about-us">
@@ -133,17 +147,85 @@ export const Main = () => {
             </div>
             <div className="services" id="services">
                 <div className="reasons">
-                    <div className="first-reason">
-                        <p className="reason_text">Авторская коктейльная карта</p>
+                    <div className="first">
+                        <button className="first-service" onClick={() => {
+                            goTo("menu", "start")
+                        }}>
+                            <p className="reason_text">Авторская коктейльная карта</p>
+                        </button>
                     </div>
-                    <div className="second-reason">
-                        <p className="reason_text">Безупречный сервис</p>
+                    <div className="second">
+                        <button className="second-service" onClick={() => setShowCard(!showCard)}>
+                            <p className="reason_text">Безупречный сервис</p>
+                        </button>
+                        {showCard && isMobile && (
+                            <div className="info-container">
+                                <div className="card">
+                                    <img src={barmen} alt="Rakhim"/>
+                                    <div className="card--info">
+                                        <p className="card--name">
+                                            Рахим
+                                        </p>
+                                        <div className="card--description">
+                                            <p>Опыт Работы: 5 лет</p>
+                                            <p>Lotte Hotel, Marriott, Buro Tsum, City Space Bar</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <img src={barmen2} alt="Yaroslav"/>
+                                    <div className="card--info">
+                                        <p className="card--name">
+                                            Ярослав
+                                        </p>
+                                        <div className="card--description">
+                                            <p>Опыт работы: 8 лет</p>
+                                            <p>Buro Tsum, Sixty</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
-                    <div className="third-reason">
-                        <p className="reason_text">Консультация и индивидуальный подбор напитков под Ваши запросы</p>
+
+                    <div className="third">
+                        <button className="third-service" onClick={() => {
+                            goTo("contact", "end")
+                        }}>
+                            <p className="reason_text">Консультация и индивидуальный подбор напитков под Ваши
+                                запросы</p>
+                        </button>
                     </div>
                 </div>
+                {showCard && !isMobile && (
+                    <div className="info-container">
+                        <div className="card">
+                            <img src={barmen} alt="Rakhim"/>
+                            <div className="card--info">
+                                <p className="card--name">
+                                    Рахим
+                                </p>
+                                <div className="card--description">
+                                    <p>Опыт Работы: 5 лет</p>
+                                    <p>Lotte Hotel, Marriott, Buro Tsum, City Space Bar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <img src={barmen2} alt="Yaroslav"/>
+                            <div className="card--info">
+                                <p className="card--name">
+                                    Ярослав
+                                </p>
+                                <div className="card--description">
+                                    <p>Опыт работы: 8 лет</p>
+                                    <p>Buro Tsum, Sixty</p>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                )}
             </div>
             <div id="history" className="history">
                 <div className="first-block">

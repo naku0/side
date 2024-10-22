@@ -2,6 +2,7 @@ import "../stylings/header.css";
 import {createRef, useEffect, useState} from "react";
 import logo from "../pics/eventside logo white.svg";
 import logo2 from "../pics/eventside logo black.svg";
+import {goTo} from "./goTo";
 
 
 export const Header = () => {
@@ -14,19 +15,9 @@ export const Header = () => {
         menu?setMenu(false):setMenu(true);
     }
 
-
-    const goTo = (id, position) => {
-
-        return () => {
-            const element = document.querySelector(`#${id}`);
-            element.scrollIntoView({
-                behavior: "smooth",
-                block: position,
-            });
-            const y = element.getBoundingClientRect().top + window.pageYOffset - 90;
-            if(position === "start") {window.scrollTo({ top: y, behavior: "smooth" });}
-            setMenu(false);
-        };
+    const handleClick = (position, scrollPoint) =>{
+        goTo(position, scrollPoint);
+        setMenu(false);
     }
 
     useEffect(() => {
@@ -52,7 +43,7 @@ export const Header = () => {
         <header>
             <ul className="header" ref={headerRef}>
                 <li className="header__logo">
-                    <button onClick={goTo("start", "start")}>
+                    <button onClick={() => handleClick("start", "start")}>
                         <img src={black?logo2:logo} alt="event-side-logo" className="logo__white" id="logo" ref={logoRef}/>
                     </button>
                 </li>
@@ -66,11 +57,11 @@ export const Header = () => {
                 <nav className="navMenu" onClick={showMenu}>
                     <ul className="navigation">
                         <img src={logo2} alt="logo_eventside-black" onClick={showMenu}/>
-                        <li onClick={goTo("about-us", "start")}>О нас</li>
-                        <li onClick={goTo("menu", "start")}>Коктейльная карта</li>
-                        <li onClick={goTo("services", "center")}>Услуги</li>
-                        <li onClick={goTo("history", "start")}>История</li>
-                        <li onClick={goTo("contact", "end")}>Контакты</li>
+                        <li onClick={() => {handleClick("about-us", "start")}}>О нас</li>
+                        <li onClick={() => {handleClick("menu", "start")}}>Коктейльная карта</li>
+                        <li onClick={() => {handleClick("services", "center")}}>Услуги</li>
+                        <li onClick={() => {handleClick("history", "start")}}>История</li>
+                        <li onClick={() => {handleClick("contact", "end")}}>Контакты</li>
                     </ul>
                 </nav>
             )}

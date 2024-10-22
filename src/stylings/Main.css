@@ -160,26 +160,41 @@ span.italic {
     flex-direction: column;
     place-content: center;
     place-items: center;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .reasons {
     display: flex;
-    place-content: space-evenly;
-    padding: 40px;
     overflow: hidden;
+    justify-content: space-evenly;
 }
 
-.reasons > div {
-    padding: 10px;
+.reasons div {
+    width: 100%;
     display: flex;
-    width: 30%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.reasons button {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 150px;
+    width: 100%;
     font-size: 1.5em;
     text-align: center;
     border: 1px var(--light-grey) solid;
     border-radius: 40px;
-    box-shadow: rgba(0,0,0,0.3) 5px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+}
+
+.reasons button:hover p {
+    color: var(--black);
 }
 
 .reasons p.reason_text {
@@ -188,6 +203,46 @@ span.italic {
     align-content: center;
     place-items: center;
     justify-content: center;
+}
+
+.info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.info-container p {
+    width: 100%;
+    text-align: center;
+}
+
+.info-container .card {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+    width: 70%;
+    justify-content: space-around;
+    padding: 10px 0 0;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card .card--info {
+    flex: 1;
+}
+
+.info-container .card--name {
+    font-weight: bold;
+    padding: 20px;
 }
 
 .history {
@@ -325,12 +380,37 @@ span.italic {
 
     .reasons {
         flex-direction: column;
+        padding: 0;
     }
 
-    .reasons > div {
-        width: 100%;
-        margin-top: 20px;
+    .reasons div {
+        padding: 10px;
+    }
+
+    .reasons button {
         font-size: 1em;
+    }
+
+    .reasons .info-container img {
+        width: 150px;
+    }
+
+    .second .info-container {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .info-container .card{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .info-container .card--name{
+        padding: 0;
+    }
+
+    .card--info {
+        font-size: 0.7em;
     }
 
     .history h1 {
