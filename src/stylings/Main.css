@@ -73,7 +73,7 @@ main {
 }
 
 span.important {
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .menu {
@@ -148,10 +148,6 @@ span.important {
 
 .cocktail__card p {
     display: block;
-}
-
-.cocktail__card .important {
-    font-weight: bold;
 }
 
 .services {

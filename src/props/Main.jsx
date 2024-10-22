@@ -159,12 +159,12 @@ export const Main = () => {
                 </div>
                 <div className="about">
                     <p>
-                        SIDE — бар, который <span className="important">не имеет единого местонахождения</span>. Как Вы
+                        SIDE — бар, который <span className="italic">не имеет единого местонахождения</span>. Как Вы
                         приходите в своё любимое место, для того, чтобы отпраздновать знаменательный день, так и любимое
-                        место <span className="important">может посетить Вас</span>.
+                        место <span className="italic">может посетить Вас</span>.
                         Мы совместили первоклассный сервис с современными технологиями приготовления напитков,
                         исключительно
-                        <span className="important">свежими и натуральнымипродуктами</span>.
+                        <span className="italic">свежими и натуральными продуктами</span>.
                     </p>
                 </div>
                 <div className="third-block">

@@ -119,9 +119,9 @@ export const Main = () => {
                     {cocktails.length > 3 && (
                         <div className="cocktail__card">
                             <p>Некоторые напитки Вы можете найти и попробовать
-                                в ресторане <span className="italic">OVO (Michelin guide)</span> и <span
-                                    className="italic">Lobby
-                                Lounge Bar</span> при отеле <span className="italic">Lotte Hotel Moscow</span>.</p>
+                                в ресторане <span className="important">OVO (Michelin guide)</span> и <span
+                                    className="important">Lobby
+                                Lounge Bar</span> при отеле <span className="important">Lotte Hotel Moscow</span>.</p>
                             {showMenu ? (
                                 <button onClick={() => setShowMenu(false)}>Спрятать</button>
                             ) : (
@@ -159,12 +159,12 @@ export const Main = () => {
                 </div>
                 <div className="about">
                     <p>
-                        SIDE — бар, который <span className="italic">не имеет единого местонахождения</span>. Как Вы
+                        SIDE — бар, который <span className="important">не имеет единого местонахождения</span>. Как Вы
                         приходите в своё любимое место, для того, чтобы отпраздновать знаменательный день, так и любимое
-                        место <span className="italic">может посетить Вас</span>.
+                        место <span className="important">может посетить Вас</span>.
                         Мы совместили первоклассный сервис с современными технологиями приготовления напитков,
                         исключительно
-                        <span className="italic">свежими и натуральнымипродуктами</span>.
+                        <span className="important">свежими и натуральнымипродуктами</span>.
                     </p>
                 </div>
                 <div className="third-block">
