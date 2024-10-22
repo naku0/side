@@ -76,6 +76,10 @@ span.important {
     font-weight: 600;
 }
 
+span.italic {
+    font-style: oblique 10deg;
+}
+
 .menu {
     width: auto;
     display: flex;
