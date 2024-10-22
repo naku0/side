@@ -73,7 +73,7 @@ main {
 }
 
 span.italic {
-    font-style: italic;
+    font-style: oblique 9deg;
 }
 
 .menu {
