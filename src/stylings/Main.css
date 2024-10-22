@@ -72,8 +72,8 @@ main {
     border-top: 3px solid var(--black);
 }
 
-span.italic {
-    font-style: oblique 5deg;
+span.important {
+    font-weight: 550;
 }
 
 .menu {

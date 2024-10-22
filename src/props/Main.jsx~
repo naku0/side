@@ -182,7 +182,7 @@ export const Main = () => {
                     <div className="first__contact">
                         <h2>Основатель</h2>
                         <p>
-                            Рахим Майерс
+                            Рахим Мирзоазизов
                         </p>
                         <a href="tel:+7(927)606-79-44">
                             <i className="material-symbols-outlined">call</i>
