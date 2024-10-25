@@ -1,5 +1,5 @@
-import {Header} from './props/Header';
-import {Main} from "./props/Main";
+import {Header} from './Components/Header';
+import {Main} from "./Components/Main";
 
 import './stylings/App.css';
 import mainImage from "./pics/main.webp";

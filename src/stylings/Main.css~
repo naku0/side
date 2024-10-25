@@ -167,6 +167,7 @@ span.italic {
     display: flex;
     overflow: hidden;
     justify-content: space-evenly;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.2));
 }
 
 .reasons div {
@@ -177,6 +178,7 @@ span.italic {
     justify-content: center;
     align-items: center;
     padding: 20px;
+
 }
 
 .reasons button {
@@ -190,7 +192,6 @@ span.italic {
     text-align: center;
     border: 1px var(--light-grey) solid;
     border-radius: 40px;
-    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
 }
 
 .reasons button:hover p {
@@ -340,6 +341,26 @@ span.italic {
     padding: 50px;
 }
 
+.cocktail__carousel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carousel__button.prev, .carousel__button.next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    width: min-content;
+    padding: 20% 40px;
+    background-color: var(--white2);
+}
+
+
 @media (max-width: 850px) {
     .about-us {
         padding: 0;
@@ -381,10 +402,18 @@ span.italic {
     .reasons {
         flex-direction: column;
         padding: 0;
+        width: 100%;
+
     }
 
-    .reasons div {
-        padding: 10px;
+    .reasons .first, .reasons .second, .reasons .third {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .reasons div{
+        padding: 0;
+        width: auto;
     }
 
     .reasons button {
@@ -395,7 +424,7 @@ span.italic {
         width: 150px;
     }
 
-    .info-container {
+    .second .info-container {
         flex-direction: column;
         padding-top: 20px;
     }
@@ -471,4 +500,17 @@ span.italic {
     .contact .contacts {
         flex-direction: column;
     }
+
+    .reasons .cocktail__carousel{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .carousel__button.prev, .carousel__button.next{
+        width: min-content;
+        height: 100%;
+        padding: 50% 10px;
+        background-color: transparent;
+    }
+
 }

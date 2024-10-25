@@ -3,6 +3,7 @@ import {createRef, useEffect, useState} from "react";
 import logo from "../pics/eventside logo white.svg";
 import logo2 from "../pics/eventside logo black.svg";
 import {goTo} from "./goTo";
+import {ReactComponent as MenuIcon} from "../icons/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 
 
 export const Header = () => {
@@ -48,8 +49,8 @@ export const Header = () => {
                     </button>
                 </li>
                 <li className={"header__menu_black"}>
-                    <button className="material-symbols-outlined" data-icon="menu" onClick={showMenu}>
-                        menu
+                    <button  data-icon="menu" onClick={showMenu}>
+                        <MenuIcon alt="menu" style={{fill: "var(--black)"}}/>
                     </button>
                 </li>
             </ul>
