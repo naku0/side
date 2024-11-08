@@ -1,4 +1,4 @@
-import {ImageWithDescription} from "./Image";
+import {Image, ImageWithDescription} from "./Image";
 
 export const CocktailCard = ({ cocktail }) => {
     return (

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {CocktailCard} from './CocktailCard';
 import {cocktails} from './CocktailList';
 import {ReactComponent as ArrowForward} from "../icons/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import {ReactComponent as ArrowBack} from "../icons/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+import {Image} from "./Image";
 
 export const CocktailCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +26,7 @@ export const CocktailCarousel = () => {
             </button>
             <div className="carousel__track">
                 <div className="carousel__slide">
-                    <CocktailCard cocktail={cocktails[currentIndex]}/>
+                    <Image cocktail={cocktails[currentIndex]}/>
                 </div>
             </div>
 

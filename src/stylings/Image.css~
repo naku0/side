@@ -5,11 +5,12 @@
     object-position: 50% 90%;
 }
 
-.image {
-    height: 600px;
+.image, .showcase {
+    height: 700px;
     width: 500px;
     position: relative;
 }
+
 
 .image::before {
     will-change: background;

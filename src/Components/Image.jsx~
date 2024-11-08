@@ -24,7 +24,7 @@ export const ImageWithDescription = ({src, alt, text, description}) => {
 export const Image =({cocktail}) => {
     const {src, alt} = cocktail;
     return (
-        <div className="showcase">
+        <div className="image">
             <img src={src} alt={alt}/>
         </div>
     );

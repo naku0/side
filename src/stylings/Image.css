@@ -1,15 +1,16 @@
-.image img {
+.image img, .showcase img {
     width: 500px;
     height: 100%;
     object-fit: cover;
     object-position: 50% 90%;
 }
 
-.image {
+.image, .showcase {
     height: 700px;
     width: 500px;
     position: relative;
 }
+
 
 .image::before {
     will-change: background;
