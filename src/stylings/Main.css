@@ -509,8 +509,15 @@ span.italic {
     .carousel__button.prev, .carousel__button.next{
         width: min-content;
         height: 100%;
-        padding: 50% 10px;
         background-color: transparent;
+    }
+
+    .carousel__button.prev{
+        padding: 50% 0 50% 20px;
+    }
+
+    .carousel__button.next{
+        padding: 50% 20px 50% 0;
     }
 
 }
