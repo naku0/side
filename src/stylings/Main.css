@@ -356,7 +356,7 @@ span.italic {
     cursor: pointer;
     border: none;
     width: min-content;
-    padding: 20% 40px;
+    padding: 10% 40px;
     background-color: var(--white2);
 }
 
