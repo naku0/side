@@ -27,6 +27,7 @@ export const CocktailCarousel = () => {
             <div className="carousel__track">
                 <div className="carousel__slide">
                     <Image cocktail={cocktails[currentIndex]}/>
+
                 </div>
             </div>
 
