@@ -343,6 +343,7 @@ span.italic {
 
 .cocktail__carousel{
     width: 100%;
+    min-height: 1500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -504,6 +505,7 @@ span.italic {
     .reasons .cocktail__carousel{
         flex-direction: row;
         width: 100%;
+        min-height: 700px;
     }
 
     .carousel__button.prev, .carousel__button.next{

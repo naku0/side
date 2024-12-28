@@ -28,14 +28,14 @@ export const Image =({cocktail}) => {
         <div className="showcase">
             <img src={src} alt={alt}/>
         </div>
-        <div className="showcase-text">
-            <p>{alt}</p>
-            <ul>
-                {description.options.map((option, index) =>
-                    <li key={index}>{option}</li>
-                )}
-            </ul>
-        </div>
+            <div className="showcase-text">
+                <p>{alt}</p>
+                <ul>
+                    {description.options.map((option, index) =>
+                        <li key={index}>{option}</li>
+                    )}
+                </ul>
+            </div>
         </>
     );
 }

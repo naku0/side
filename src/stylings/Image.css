@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    min-height: 500px;
 }
 
 .showcase-text p{
@@ -114,6 +115,10 @@
     }
     .image ul li{
         font-size: 1em;
+    }
+
+    .showcase-text{
+        min-height: 150px;
     }
 
     .showcase-text p{
