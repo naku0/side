@@ -24,7 +24,7 @@ function App() {
 
             <Header/>
 
-            <a href="https://wa.me/79276067944" className="whatsapp-button">
+            <a href="https://wa.me/79876081737" className="whatsapp-button">
                 <Whatsapp/>
             </a>
 

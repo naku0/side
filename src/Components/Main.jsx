@@ -125,12 +125,12 @@ export const Main = () => {
 
                     </div>
                     <div className="second__contact">
-                        <h2>Бизнес Ассистент</h2>
+                        <h2>Бизнес-ассистент</h2>
                         <p>
-                            Виктория Косенкова</p>
-                        <a href="tel:+7(911)598-75-70">
+                            Матвей Шуберт</p>
+                        <a href="tel:+7(999)866-44-68">
                             <CallIcon alt="call" style={{fill: "var(--black)"}}/>
-                            +7(911)598-75-70
+                            +7(999)866-44-68
                         </a>
                     </div>
                 </div>

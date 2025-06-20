@@ -9,8 +9,7 @@ import {cocktails} from "./CocktailList";
 import {BarmanCards} from "./BarmanCards";
 import {CocktailCarousel} from "./CocktailCarousel";
 import {ReactComponent as CallIcon} from "../icons/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import {ReactComponent as ArrowForward} from "../icons/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
-import {ReactComponent as ArrowBack} from "../icons/arrow_back_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
+
 
 export const Main = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -28,8 +27,7 @@ export const Main = () => {
         };
     }, []);
 
-    return (
-        <main>
+    return (<main>
             <div className="about-us" id="about-us">
                 <div className="first-block">
                     <p>
@@ -53,20 +51,22 @@ export const Main = () => {
             <div className="services" id="services">
                 <div className="reasons">
                     <div className="first">
-                        <button className="first-service" onClick={() => {setShowCarousel(!showCarousel); setShowCard(false)}}>
+                        <button className="first-service" onClick={() => {
+                            setShowCarousel(!showCarousel);
+                            setShowCard(false)
+                        }}>
                             <p className="reason_text">Авторская коктейльная карта</p>
                         </button>
-                        {showCarousel && isMobile && (
-                            <CocktailCarousel/>
-                        )}
+                        {showCarousel && isMobile && (<CocktailCarousel/>)}
                     </div>
                     <div className="second">
-                        <button className="second-service" onClick={() => {setShowCard(!showCard); setShowCarousel(false)}}>
+                        <button className="second-service" onClick={() => {
+                            setShowCard(!showCard);
+                            setShowCarousel(false)
+                        }}>
                             <p className="reason_text">Безупречный сервис</p>
                         </button>
-                        {showCard && isMobile && (
-                            <BarmanCards/>
-                        )}
+                        {showCard && isMobile && (<BarmanCards/>)}
                     </div>
 
                     <div className="third">
@@ -78,12 +78,8 @@ export const Main = () => {
                         </button>
                     </div>
                 </div>
-                {showCard && !isMobile && (
-                    <BarmanCards/>
-                )}
-                {showCarousel && !isMobile && (
-                    <CocktailCarousel/>
-                )}
+                {showCard && !isMobile && (<BarmanCards/>)}
+                {showCarousel && !isMobile && (<CocktailCarousel/>)}
             </div>
             <div id="history" className="history">
                 <div className="first-block">
@@ -124,21 +120,20 @@ export const Main = () => {
                             Рахим Мирзоазизов
                         </p>
                         <a href="tel:+7(927)606-79-44">
-                            <CallIcon alt="call" style = {{ fill: "var(--black)" }}/>
+                            <CallIcon alt="call" style={{fill: "var(--black)"}}/>
                             +7(927)606-79-44</a>
 
                     </div>
                     <div className="second__contact">
                         <h2>Бизнес Ассистент</h2>
                         <p>
-                            Виктория Косенкова</p>
-                        <a href="tel:+7(911)598-75-70">
-                            <CallIcon alt="call" style = {{ fill: "var(--black)" }}/>
-                            +7(911)598-75-70
+                            Матвей Шуберт</p>
+                        <a href="tel:+7(999)866-44-68">
+                            <CallIcon alt="call" style={{fill: "var(--black)"}}/>
+                            +7(999)866-44-68
                         </a>
                     </div>
                 </div>
             </div>
-        </main>
-    );
+        </main>);
 }

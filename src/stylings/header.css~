@@ -120,7 +120,7 @@ button:active {
 }
 
 .navigation li:hover{
-    background-color: var(--white2);
+    background-color: var(--light-grey);
 }
 
 
