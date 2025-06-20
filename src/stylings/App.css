@@ -112,12 +112,14 @@ header {
     width: 70px;
     z-index: 2;
     border-radius: 50%;
-    background-color: var(--snowy-white);
+    fill: var(--snowy-white);
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     text-decoration: none;
+    animation: pulsation 2s linear infinite;
 }
 
 .whatsapp-button:hover {
@@ -139,6 +141,17 @@ header {
     .form button {
         font-size: 0.8em;
     }
+
+    .whatsapp-button {
+        bottom: 15px;
+        right: 15px;
+        height: 50px;
+        width: 50px;
+        svg {
+            height: 30px;
+            width: 30px;
+        }
+    }
 }
 
 @keyframes scalation {
@@ -150,6 +163,18 @@ header {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes pulsation {
+    0% {
+        filter: drop-shadow(0 0 0 var(--black));
+    }
+    50%{
+        filter: drop-shadow(0 0 5px var(--black));
+    }
+    100%{
+        filter: drop-shadow(0 0 0 var(--black));
     }
 }
 

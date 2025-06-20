@@ -5,7 +5,7 @@ import './stylings/App.css';
 import mainImage from "./pics/main.webp";
 import phoneMain from "./pics/LadyInRed.webp"
 import {useRef, useState} from "react";
-import {ReactComponent as Whatsapp} from "../src/icons/whatsapp.svg";
+import {ReactComponent as Chat} from "../src/icons/conversation-svgrepo-com.svg";
 
 function App() {
     const [is18, set18] = useState(false);
@@ -25,7 +25,7 @@ function App() {
             <Header/>
 
             <a href="https://wa.me/79276067944" className="whatsapp-button">
-                <Whatsapp/>
+                <Chat/>
             </a>
 
             <div className="video" id="start">
